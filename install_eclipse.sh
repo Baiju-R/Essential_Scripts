@@ -4,6 +4,11 @@
 # Script Name: install_eclipse.sh
 # Description: Hardened, enterprise-ready non-interactive Eclipse installer.
 # Version:     1.0.0
+
+# https://www.eclipse.org/downloads/packages/
+# Download one of these Linux x86_64 .tar.gz packages:
+# Eclipse IDE for Java Developers (recommended)
+# eclipse-java-2026-06-R-linux-gtk-x86_64.tar.gz
 #
 # Prerequisites:
 #   • Run as root (sudo)
