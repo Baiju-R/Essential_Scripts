@@ -1,0 +1,3 @@
+#Network Reset Command:
+ 
+sudo bash -c 'rfkill unblock all; systemctl restart NetworkManager systemd-resolved wpa_supplicant 2>/dev/null; nmcli networking off; sleep 2; nmcli networking on; IF=$(ip route | awk "/default/ {print \$5; exit}"); [ -n "$IF" ] && { dhclient -r "$IF" 2>/dev/null; dhclient "$IF" 2>/dev/null; }; resolvectl flush-caches 2>/dev/null; ip route flush cache 2>/dev/null; ip neigh flush all 2>/dev/null'
