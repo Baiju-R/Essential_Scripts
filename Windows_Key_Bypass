@@ -1,4 +1,4 @@
-Windows Key Bypassing:
+Windows Key Bypassing: (Run CMD as a administrator)
  
 sc config LicenseManager start= auto & net start LicenseManager
  
